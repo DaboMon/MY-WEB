@@ -11,6 +11,7 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1556740738-b6a63ed27c26">
   <meta property="og:url" content="https://www.maquinariapro.com">
   <meta property="og:type" content="website">
+  
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -30,6 +31,7 @@
     ]
   }
   </script>
+  
   <script src="https://cdn.tailwindcss.com" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -241,19 +243,167 @@
       </div>
     </section>
 
-    <!-- OTRAS SECCIONES (MANTENIDAS IGUAL) -->
-    <!-- ... (secciones de servicios, testimonios y CTA permanecen igual) ... -->
-
+     <!-- SECCIÓN DE SERVICIOS -->
+    <section class="py-16 bg-gray-800 text-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-700 p-6 rounded-lg text-center">
+            <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-search text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Asesoramiento Técnico</h3>
+            <p class="text-gray-300">Expertos que te ayudarán a encontrar la máquina perfecta.</p>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-lg text-center">
+            <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-tools text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Mantenimiento y Reparación</h3>
+            <p class="text-gray-300">Soporte técnico para mantener tus equipos en óptimas condiciones.</p>
+          </div>
+          <div class="bg-gray-700 p-6 rounded-lg text-center">
+            <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-shipping-fast text-2xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Logística y Transporte</h3>
+            <p class="text-gray-300">Transporte seguro de maquinaria pesada a nivel nacional e internacional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- TESTIMONIOS -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Clientes Satisfechos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <article class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                <i class="fas fa-user text-blue-600" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Carlos Méndez</h4>
+                <p class="text-gray-500 text-sm">Embotelladora Méndez</p>
+              </div>
+            </div>
+            <p class="text-gray-700">"Compré una llenadora usada y llegó en perfectas condiciones. El equipo fue muy profesional."</p>
+            <div class="mt-3 text-yellow-400" aria-label="Calificación de 5 estrellas">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+            </div>
+          </article>
+          <article class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
+                <i class="fas fa-user text-green-600" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 class="font-bold">Laura Ramírez</h4>
+                <p class="text-gray-500 text-sm">Aceites del Valle</p>
+              </div>
+            </div>
+            <p class="text-gray-700">"Vendimos nuestra antigua envasadora en menos de 2 semanas y a un precio justo. Excelente servicio postventa."</p>
+            <div class="mt-3 text-yellow-400" aria-label="Calificación de 4.5 estrellas">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <!-- CTA -->
+    <section class="py-16 bg-blue-600 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">¿Listo para mejorar tu línea de producción?</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">Contáctanos hoy mismo y descubre cómo podemos ayudarte a encontrar la maquinaria perfecta o vender tus equipos.</p>
+        <button class="bg-white hover:bg-gray-100 text-blue-600 font-bold py-3 px-8 rounded-lg text-lg transition-all" aria-label="Contactar ahora">
+          <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Contactar Ahora
+        </button>
+      </div>
+    </section>
   </main>
   
-  <!-- FOOTER (MANTENIDO IGUAL) -->
+  <!-- FOOTER -->
   <footer class="bg-gray-900 text-white py-12" role="contentinfo">
-    <!-- ... (contenido del footer sin cambios) ... -->
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <i class="fas fa-industry text-3xl text-blue-500 mr-3" aria-hidden="true"></i>
+            <h3 class="text-xl font-bold">Maquinaria<span class="text-blue-400">Industrial</span>Pro</h3>
+          </div>
+          <p class="text-gray-400">Líderes en compra y venta de maquinaria industrial para el sector de envasado y embotellado.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Inicio</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Comprar Máquinas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Vender Máquinas</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Servicios</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Contacto</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400" aria-hidden="true"></i>
+              <span>Av. Industrial 1234, Zona Franca, Ciudad</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400" aria-hidden="true"></i>
+              <span>+1 234 567 890</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-3 text-blue-400" aria-hidden="true"></i>
+              <span>info@maquinariapro.com</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold mb-4">Síguenos</h4>
+          <div class="flex space-x-4 mb-6">
+            <a href="#" class="w-10 h-10 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-600" aria-label="Facebook">
+              <i class="fab fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500" aria-label="Twitter">
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+          </div>
+          <h4 class="text-lg font-bold mb-2">Newsletter</h4>
+          <div class="flex">
+            <input type="email" placeholder="Tu email" class="bg-gray-800 text-white px-3 py-2 rounded-l focus:outline-none w-full" aria-label="Correo electrónico para newsletter">
+            <button class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r" aria-label="Enviar suscripción">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+        <p>© 2023 MaquinariaIndustrialPro. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
   
   <!-- JavaScript -->
   <script defer>
-    // Función para alternar entre secciones (comprar/vender)
+    // Función para alternar entre secciones
     function showSection(section) {
       const buySection = document.getElementById('buy-section');
       const sellSection = document.getElementById('sell-section');
@@ -267,8 +417,8 @@
         window.scrollTo({ top: sellSection.offsetTop - 100, behavior:'smooth' });
       }
     }
-  
-    // Toggle del menú móvil
+
+    // Menú móvil
     const mobileToggle = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     mobileToggle.addEventListener('click', () => {
@@ -276,12 +426,12 @@
       mobileToggle.setAttribute('aria-expanded', mobileMenu.classList.contains('hidden') ? 'false' : 'true');
     });
 
-    // Manejo de subida de archivos (mantenido para mejor UX)
+    // Manejo de fotos
     const photosInput = document.getElementById('photos');
     const dropZone = document.getElementById('drop-zone');
-  
+
     dropZone.addEventListener('click', () => photosInput.click());
-  
+
     photosInput.addEventListener('change', function(e) {
       const files = e.target.files;
       dropZone.innerHTML = '';
@@ -307,30 +457,28 @@
         dropZone.innerHTML = '<i class="fas fa-camera text-3xl text-gray-400 mb-2" aria-hidden="true"></i><p class="text-gray-500">Arrastra tus fotos aquí o haz clic para seleccionar</p>';
       }
     });
-  
+
+    // Drag & Drop
     ['dragover', 'dragenter'].forEach(eventName => {
       dropZone.addEventListener(eventName, (e) => {
         e.preventDefault();
         dropZone.classList.add('border-blue-500', 'bg-blue-50');
       });
     });
-  
+
     ['dragleave', 'dragend', 'drop'].forEach(eventName => {
       dropZone.addEventListener(eventName, (e) => {
         e.preventDefault();
         dropZone.classList.remove('border-blue-500', 'bg-blue-50');
       });
     });
-  
+
     dropZone.addEventListener('drop', (e) => {
       e.preventDefault();
-      const dt = e.dataTransfer;
-      const files = dt.files;
+      const files = e.dataTransfer.files;
       photosInput.files = files;
-      const event = new Event('change');
-      photosInput.dispatchEvent(event);
+      photosInput.dispatchEvent(new Event('change'));
     });
   </script>
 </body>
-</html>
 </html>
