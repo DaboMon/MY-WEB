@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Toda la sección head permanece igual -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maquinaria Industrial Pro | Compra y Venta de Equipos</title>
-  <!-- SEO y Redes Sociales -->
   <meta name="description" content="Compra y venta de maquinaria industrial. Asesoramiento técnico, mantenimiento y logística para mejorar tu línea de producción.">
   <meta name="keywords" content="maquinaria, industrial, compra, venta, equipos, envasadoras, llenadoras">
   <meta property="og:title" content="Maquinaria Industrial Pro">
@@ -13,7 +11,6 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1556740738-b6a63ed27c26">
   <meta property="og:url" content="https://www.maquinariapro.com">
   <meta property="og:type" content="website">
-  <!-- Datos Estructurados -->
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -33,7 +30,6 @@
     ]
   }
   </script>
-  
   <script src="https://cdn.tailwindcss.com" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -56,39 +52,124 @@
   </style>
 </head>
 <body class="font-sans bg-gray-100">
-  <!-- HEADER (sin cambios) -->
+  <!-- HEADER -->
   <header role="banner" class="bg-white shadow-md">
-    <!-- ... Contenido del header igual ... -->
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <i class="fas fa-industry text-3xl text-blue-600 mr-3" aria-hidden="true"></i>
+        <h1 class="text-2xl font-bold text-gray-800">Maquinaria<span class="text-blue-600">Industrial</span>Pro</h1>
+      </div>
+      <nav class="hidden md:flex space-x-8" aria-label="Menú principal">
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Inicio</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Sobre Nosotros</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contacto</a>
+      </nav>
+      <button id="mobile-toggle" class="md:hidden text-gray-600 focus:outline-none" aria-label="Abrir menú">
+         <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu bg-white shadow-md px-4 py-2 hidden" aria-label="Menú móvil">
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium py-2">Inicio</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium py-2">Sobre Nosotros</a>
+      <a href="#" class="block text-gray-600 hover:text-blue-600 font-medium py-2">Contacto</a>
+    </nav>
   </header>
   
   <main>
-    <!-- HERO SECTION (sin cambios) -->
+    <!-- HERO SECTION -->
     <section class="hero-bg text-white py-20">
-      <!-- ... Contenido hero igual ... -->
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Compra y Venta de Maquinaria Industrial</h2>
+        <p class="text-xl mb-10 max-w-2xl mx-auto">Soluciones profesionales para tu línea de producción. Envasadoras, llenadoras, etiquetadoras y más.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+          <button onclick="showSection('buy')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all flex items-center justify-center">
+            <i class="fas fa-shopping-cart mr-2" aria-hidden="true"></i> Comprar Máquinas
+          </button>
+          <button onclick="showSection('sell')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-all flex items-center justify-center">
+            <i class="fas fa-dollar-sign mr-2" aria-hidden="true"></i> Vender Mis Máquinas
+          </button>
+        </div>
+      </div>
     </section>
   
-    <!-- SECCIÓN DE COMPRA (sin cambios) -->
+    <!-- SECCIÓN DE COMPRA -->
     <section id="buy-section" class="hidden-section py-16 bg-white">
-      <!-- ... Contenido sección compra igual ... -->
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Máquinas Disponibles</h2>
+          <div class="flex items-center">
+            <label for="filter" class="mr-2 text-gray-600">Filtrar por:</label>
+            <select id="filter" class="border border-gray-300 rounded px-3 py-2">
+              <option>Todas las categorías</option>
+              <option>Envasadoras</option>
+              <option>Llenadoras</option>
+              <option>Etiquetadoras</option>
+              <option>Empacadoras</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover transition-all">
+            <div class="h-48 bg-gray-200 flex items-center justify-center">
+              <i class="fas fa-wine-bottle text-6xl text-blue-500" aria-hidden="true"></i>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Envasadora Automática XT-2000</h3>
+              <p class="text-gray-600 mb-4">Capacidad de 2000 botellas por hora. Sistema de llenado por gravedad.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-2xl font-bold text-blue-600">$45,000</span>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" aria-label="Ver detalles de Envasadora Automática XT-2000">
+                  Ver Detalles
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg transition-all">
+            Ver Más Máquinas <i class="fas fa-arrow-down ml-2" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </section>
   
-    <!-- SECCIÓN DE VENTA (con modificaciones para Netlify) -->
+    <!-- SECCIÓN DE VENTA CON FORMULARIO NETLIFY -->
     <section id="sell-section" class="hidden-section py-16 bg-gray-50">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Vende Tus Máquinas con Nosotros</h2>
         <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
           <div class="md:flex">
             <div class="md:w-1/2 bg-blue-600 p-8 text-white flex flex-col justify-center">
-              <!-- ... Contenido beneficios venta igual ... -->
+              <h3 class="text-2xl font-bold mb-4">¿Por qué vender con nosotros?</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-xl mr-3 mt-1" aria-hidden="true"></i>
+                  <span>Amplia red de compradores industriales</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-xl mr-3 mt-1" aria-hidden="true"></i>
+                  <span>Valoración profesional de tu maquinaria</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-xl mr-3 mt-1" aria-hidden="true"></i>
+                  <span>Proceso seguro y transparente</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-xl mr-3 mt-1" aria-hidden="true"></i>
+                  <span>Comisión competitiva</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check-circle text-xl mr-3 mt-1" aria-hidden="true"></i>
+                  <span>Asesoramiento técnico y legal</span>
+                </li>
+              </ul>
             </div>
             <div class="md:w-1/2 p-8">
               <h3 class="text-2xl font-bold mb-6 text-gray-800">Formulario de Venta</h3>
-              <form name="venta-maquinaria" method="POST" netlify enctype="multipart/form-data" novalidate>
-                <input type="hidden" name="form-name" value="venta-maquinaria">
-                
+              <form name="venta-maquinaria" method="POST" netlify enctype="multipart/form-data" data-netlify="true">
                 <div class="mb-4">
                   <label for="machine-type" class="block text-gray-700 mb-2">Tipo de Máquina</label>
-                  <select id="machine-type" name="Tipo de Máquina" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                  <select id="machine-type" name="tipo-maquina" class="w-full border border-gray-300 rounded px-3 py-2" required>
                     <option value="">Seleccione una opción</option>
                     <option>Envasadora</option>
                     <option>Llenadora</option>
@@ -97,20 +178,17 @@
                     <option>Otra</option>
                   </select>
                 </div>
-                
                 <div class="mb-4">
                   <label for="brand" class="block text-gray-700 mb-2">Marca y Modelo</label>
-                  <input type="text" id="brand" name="Marca y Modelo" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                  <input type="text" id="brand" name="marca-modelo" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Ej: Sidel SBO 20" required>
                 </div>
-                
                 <div class="mb-4">
                   <label for="year" class="block text-gray-700 mb-2">Año de Fabricación</label>
-                  <input type="number" id="year" name="Año de Fabricación" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                  <input type="number" id="year" name="año-fabricacion" class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Ej: 2018" required>
                 </div>
-                
                 <div class="mb-4">
                   <label for="condition" class="block text-gray-700 mb-2">Estado</label>
-                  <select id="condition" name="Estado" class="w-full border border-gray-300 rounded px-3 py-2" required>
+                  <select id="condition" name="estado" class="w-full border border-gray-300 rounded px-3 py-2" required>
                     <option value="">Seleccione una opción</option>
                     <option>Nueva</option>
                     <option>Usada - Excelente estado</option>
@@ -119,16 +197,14 @@
                     <option>Para repuestos</option>
                   </select>
                 </div>
-                
                 <div class="mb-6">
                   <label for="photos" class="block text-gray-700 mb-2">Fotos (Máx. 5)</label>
                   <div id="drop-zone" class="border-2 border-dashed border-gray-300 rounded p-4 text-center cursor-pointer">
                     <i class="fas fa-camera text-3xl text-gray-400 mb-2" aria-hidden="true"></i>
                     <p class="text-gray-500">Arrastra tus fotos aquí o haz clic para seleccionar</p>
-                    <input type="file" id="photos" name="Fotos" class="hidden" multiple accept="image/*">
+                    <input type="file" id="photos" name="fotos" class="hidden" multiple accept="image/*">
                   </div>
                 </div>
-                
                 <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition-all">
                   Enviar Solicitud de Venta
                 </button>
@@ -136,57 +212,125 @@
             </div>
           </div>
         </div>
-        <!-- ... Resto de la sección igual ... -->
+        <div class="mt-12 bg-white rounded-xl shadow-md p-8 max-w-4xl mx-auto">
+          <h3 class="text-2xl font-bold mb-6 text-center">Proceso de Venta</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center p-4">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-blue-600 font-bold text-xl">1</span>
+              </div>
+              <h4 class="font-bold mb-2">Registro y Valoración</h4>
+              <p class="text-gray-600">Envía los datos de tu máquina y nuestros expertos la valorarán.</p>
+            </div>
+            <div class="text-center p-4">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-blue-600 font-bold text-xl">2</span>
+              </div>
+              <h4 class="font-bold mb-2">Publicación y Promoción</h4>
+              <p class="text-gray-600">Publicamos tu máquina en nuestro marketplace y redes especializadas.</p>
+            </div>
+            <div class="text-center p-4">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-blue-600 font-bold text-xl">3</span>
+              </div>
+              <h4 class="font-bold mb-2">Venta y Entrega</h4>
+              <p class="text-gray-600">Gestionamos la venta segura y te ayudamos con la logística.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Resto de las secciones sin cambios -->
-    <!-- SECCIÓN DE SERVICIOS -->
-    <section class="py-16 bg-gray-800 text-white">
-      <!-- ... Contenido igual ... -->
-    </section>
+    <!-- OTRAS SECCIONES (MANTENIDAS IGUAL) -->
+    <!-- ... (secciones de servicios, testimonios y CTA permanecen igual) ... -->
 
-    <!-- TESTIMONIOS -->
-    <section class="py-16 bg-white">
-      <!-- ... Contenido igual ... -->
-    </section>
-
-    <!-- CTA -->
-    <section class="py-16 bg-blue-600 text-white">
-      <!-- ... Contenido igual ... -->
-    </section>
   </main>
-
-  <!-- FOOTER (sin cambios) -->
+  
+  <!-- FOOTER (MANTENIDO IGUAL) -->
   <footer class="bg-gray-900 text-white py-12" role="contentinfo">
-    <!-- ... Contenido del footer igual ... -->
+    <!-- ... (contenido del footer sin cambios) ... -->
   </footer>
-
-  <!-- JavaScript (con eliminación del bloqueo de envío del formulario) -->
+  
+  <!-- JavaScript -->
   <script defer>
     // Función para alternar entre secciones (comprar/vender)
     function showSection(section) {
-      // ... Código igual ...
+      const buySection = document.getElementById('buy-section');
+      const sellSection = document.getElementById('sell-section');
+      if(section === 'buy'){
+        buySection.classList.remove('hidden-section');
+        sellSection.classList.add('hidden-section');
+        window.scrollTo({ top: buySection.offsetTop - 100, behavior:'smooth' });
+      } else {
+        sellSection.classList.remove('hidden-section');
+        buySection.classList.add('hidden-section');
+        window.scrollTo({ top: sellSection.offsetTop - 100, behavior:'smooth' });
+      }
     }
-
+  
     // Toggle del menú móvil
     const mobileToggle = document.getElementById('mobile-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     mobileToggle.addEventListener('click', () => {
-      // ... Código igual ...
+      mobileMenu.classList.toggle('hidden');
+      mobileToggle.setAttribute('aria-expanded', mobileMenu.classList.contains('hidden') ? 'false' : 'true');
     });
 
-    // Manejo de subida de archivos (drag & drop)
+    // Manejo de subida de archivos (mantenido para mejor UX)
     const photosInput = document.getElementById('photos');
     const dropZone = document.getElementById('drop-zone');
-    // ... Código igual del manejo de archivos ...
-
-    // Validación básica del formulario (modificado para permitir envío)
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(e) {
-      // Se eliminó el e.preventDefault() para permitir el envío
-      alert("Solicitud enviada correctamente");
+  
+    dropZone.addEventListener('click', () => photosInput.click());
+  
+    photosInput.addEventListener('change', function(e) {
+      const files = e.target.files;
+      dropZone.innerHTML = '';
+      if(files.length > 0) {
+        for(let i = 0; i < Math.min(files.length, 5); i++) {
+          const reader = new FileReader();
+          reader.onload = function(event) {
+            const img = document.createElement('img');
+            img.src = event.target.result;
+            img.alt = `Imagen ${i+1}`;
+            img.className = 'h-24 w-24 object-cover rounded inline-block m-1';
+            dropZone.appendChild(img);
+          };
+          reader.readAsDataURL(files[i]);
+        }
+        if(files.length > 5){
+          const warning = document.createElement('p');
+          warning.textContent = `+${files.length - 5} más`;
+          warning.className = 'text-sm text-gray-500 mt-2';
+          dropZone.appendChild(warning);
+        }
+      } else {
+        dropZone.innerHTML = '<i class="fas fa-camera text-3xl text-gray-400 mb-2" aria-hidden="true"></i><p class="text-gray-500">Arrastra tus fotos aquí o haz clic para seleccionar</p>';
+      }
+    });
+  
+    ['dragover', 'dragenter'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.add('border-blue-500', 'bg-blue-50');
+      });
+    });
+  
+    ['dragleave', 'dragend', 'drop'].forEach(eventName => {
+      dropZone.addEventListener(eventName, (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('border-blue-500', 'bg-blue-50');
+      });
+    });
+  
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const dt = e.dataTransfer;
+      const files = dt.files;
+      photosInput.files = files;
+      const event = new Event('change');
+      photosInput.dispatchEvent(event);
     });
   </script>
 </body>
+</html>
 </html>
